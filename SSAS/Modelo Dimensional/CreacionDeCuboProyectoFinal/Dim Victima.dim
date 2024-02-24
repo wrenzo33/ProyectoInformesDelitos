@@ -1,0 +1,266 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="5c4ea385-8f21-41bd-b416-05f2dc9f6bd7" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Dim Victima</ID>
+  <Name>Dim Victima</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-1872" scrolltop="-3546" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="8255" y="9816" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Dim_Victima" left="20" top="0" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="4471" height="2725" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e000077110000a50a0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_Dim_Victima" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-1872</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-3546</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ARDiagramLayout</Name>
+      <Value>
+        <DiagramLayout ZoomPercent="100" ViewPortX="0" ViewPortY="0" xmlns="">
+          <Shapes NodeWidth="105">
+            <Shape Id="ID Victima" Expanded="false">
+              <Attributes>
+                <Attribute Id="ID Victima" />
+              </Attributes>
+              <Position x="20" y="20" />
+            </Shape>
+            <Shape Id="Edad Victima" Expanded="false">
+              <Attributes>
+                <Attribute Id="Edad Victima" />
+              </Attributes>
+              <Position x="156" y="20" />
+            </Shape>
+            <Shape Id="Descripcion Origen Etnico" Expanded="false">
+              <Attributes>
+                <Attribute Id="Descripcion Origen Etnico" />
+              </Attributes>
+              <Position x="292" y="20" />
+            </Shape>
+            <Shape Id="Descripcion Genero" Expanded="false">
+              <Attributes>
+                <Attribute Id="Descripcion Genero" />
+              </Attributes>
+              <Position x="428" y="20" />
+            </Shape>
+          </Shapes>
+        </DiagramLayout>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="04c86219-5f39-46fe-82d5-f24a64527284">
+    <DataSourceViewID>PROJECT_View</DataSourceViewID>
+  </Source>
+  <UnknownMember>Visible</UnknownMember>
+  <ErrorConfiguration dwd:design-time-name="cc423224-280b-4fcf-a83c-1325b97abb0b">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="3fc41f63-2655-45b8-b35e-1ffc38ada447">
+      <ID>ID Victima</ID>
+      <Name>ID Victima</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="2a821cd9-8549-4746-9a67-b23d7fdce819">
+          <DataType>Integer</DataType>
+          <NullProcessing>UnknownMember</NullProcessing>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="a8378795-5ee0-4895-9d47-7436abea7cd4">
+            <TableID>dbo_Dim_Victima</TableID>
+            <ColumnID>ID_Victima</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="42735124-f986-4d9c-a0d0-fc85319ba58e">
+          <AttributeID>Edad Victima</AttributeID>
+          <Name>Edad</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="39d5af91-bc6b-436c-9268-9383831186a5">
+      <ID>Descripcion Genero</ID>
+      <Name>Genero</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="cd22bf63-4738-42d3-a654-71f3452316cc">
+          <DataType>WChar</DataType>
+          <DataSize>30</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="9a411362-2e10-49a6-acc1-8b5d818c6fc2">
+            <TableID>dbo_Dim_Victima</TableID>
+            <ColumnID>Descripcion_Genero</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="83b1101e-16f1-4ae5-8d63-a0d694961d85">
+      <ID>Descripcion Origen Etnico</ID>
+      <Name>Origen Etnico</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="92f1a326-a019-495d-9491-44ff8400d33d">
+          <DataType>WChar</DataType>
+          <DataSize>30</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="9bcd0864-b170-4a37-b6a6-29aa65110a6f">
+            <TableID>dbo_Dim_Victima</TableID>
+            <ColumnID>Descripcion_Genero</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="4356c7a1-a518-4679-9326-25d9fd9e61c8">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="5beb62f7-ce95-41d7-8db6-c42936e010df">
+            <TableID>dbo_Dim_Victima</TableID>
+            <ColumnID>Descripcion_OrigenEtnico</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="ece57485-2f43-44f5-b238-95131fa91110">
+        <DataType>WChar</DataType>
+        <DataSize>50</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="5355101c-0607-4338-ab2d-425947201d82">
+          <TableID>dbo_Dim_Victima</TableID>
+          <ColumnID>Descripcion_OrigenEtnico</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="ea138980-a382-44b4-96cd-2b5d235a8351">
+          <AttributeID>Descripcion Genero</AttributeID>
+          <Name>Genero</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="52cf7e89-9c7f-44df-b61d-a8673e4c8863">
+      <ID>Edad Victima</ID>
+      <Name>Edad</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="16486d18-81d4-4cc3-a66f-e0c43f44566f">
+          <DataType>WChar</DataType>
+          <DataSize>30</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="71cafdde-7912-4787-b5a0-8440faf0d176">
+            <TableID>dbo_Dim_Victima</TableID>
+            <ColumnID>Descripcion_Genero</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="e2b40a3e-2d8f-4c4a-a23b-441f81ea5bcb">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="800c7614-137d-46cb-9b00-b87aca2702ca">
+            <TableID>dbo_Dim_Victima</TableID>
+            <ColumnID>Descripcion_OrigenEtnico</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="dbb6a2fa-3581-4eb2-91df-c33e646e7a38">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="92ce5530-f9b5-4b31-a436-6bc6ff9004d0">
+            <TableID>dbo_Dim_Victima</TableID>
+            <ColumnID>Edad_Victima</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="8d14f7ec-075b-4868-b1c9-bcfa232ac48f">
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="3aa0f0a8-3960-49b3-a1e8-b9eef96b06d5">
+          <TableID>dbo_Dim_Victima</TableID>
+          <ColumnID>Edad_Victima</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="48b20d14-eb6b-4697-91ca-f17859b54c0d">
+          <AttributeID>Descripcion Origen Etnico</AttributeID>
+          <Name>Origen Etnico</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <Hierarchies>
+    <Hierarchy dwd:design-time-name="18848c48-b115-42c1-bd2d-351bd683aa7a">
+      <ID>Jerarquía</ID>
+      <Name>VictimaInfo</Name>
+      <Levels>
+        <Level dwd:design-time-name="bbe9c632-3898-4b0e-aa74-430fd58f1852">
+          <ID>Genero</ID>
+          <Name>Genero</Name>
+          <SourceAttributeID>Descripcion Genero</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="65de99e7-5017-484b-9eab-4f197829c0b7">
+          <ID>Origen Etnico</ID>
+          <Name>Origen Etnico</Name>
+          <SourceAttributeID>Descripcion Origen Etnico</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="f92fb92b-1539-452c-9380-520f75545d4a">
+          <ID>Edad</ID>
+          <Name>Edad</Name>
+          <SourceAttributeID>Edad Victima</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+  </Hierarchies>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>

@@ -1,0 +1,267 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="4e5b7399-2d13-49e9-8e8f-14c9fbbd1f69" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Dim Area Delito 1 1</ID>
+  <Name>Dim Area Delito</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-2295" scrolltop="-3546" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="8255" y="9816" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Dim_AreaDelito" left="20" top="0" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="3625" height="2725" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000290e0000a50a0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_Dim_AreaDelito" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-2295</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-3546</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ARDiagramLayout</Name>
+      <Value>
+        <DiagramLayout ZoomPercent="100" ViewPortX="0" ViewPortY="0" xmlns="">
+          <Shapes NodeWidth="110">
+            <Shape Id="ID Area Delito" Expanded="false">
+              <Attributes>
+                <Attribute Id="ID Area Delito" />
+              </Attributes>
+              <Position x="20" y="20" />
+            </Shape>
+            <Shape Id="Nombre Ubicacion" Expanded="false">
+              <Attributes>
+                <Attribute Id="Nombre Ubicacion" />
+              </Attributes>
+              <Position x="162" y="20" />
+            </Shape>
+            <Shape Id="Nombre Lugar" Expanded="false">
+              <Attributes>
+                <Attribute Id="Nombre Lugar" />
+              </Attributes>
+              <Position x="305" y="20" />
+            </Shape>
+            <Shape Id="Nombre Area" Expanded="false">
+              <Attributes>
+                <Attribute Id="Nombre Area" />
+              </Attributes>
+              <Position x="447" y="20" />
+            </Shape>
+          </Shapes>
+        </DiagramLayout>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="8b0fbf6d-4dc7-4e7e-9378-abbb08ade70d">
+    <DataSourceViewID>PROJECT_View</DataSourceViewID>
+  </Source>
+  <UnknownMember>Visible</UnknownMember>
+  <ErrorConfiguration dwd:design-time-name="64c6c083-ab5b-4e4f-adf6-e81ae5937e47">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="b469f458-52a8-4055-a6ab-cadd552a9091">
+      <ID>ID Area Delito</ID>
+      <Name>ID Area Delito</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="e1a6c55b-d4a0-40d7-836b-464f3541d842">
+          <DataType>Integer</DataType>
+          <NullProcessing>UnknownMember</NullProcessing>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="43a4abf1-8e7c-481d-9e49-6f052a9f6551">
+            <TableID>dbo_Dim_AreaDelito</TableID>
+            <ColumnID>ID_AreaDelito</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="c4163a50-4870-446f-a259-3b82d8bb4f71">
+          <AttributeID>Nombre Ubicacion</AttributeID>
+          <Name>Ubicacion</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="1e5edbc8-b656-4384-ac73-c0392675333b">
+      <ID>Nombre Area</ID>
+      <Name>Area</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="71f1d7fa-9eb0-4eab-a89d-ea9c11476e26">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="cc1fe0f6-f508-48c8-8cbf-74871dac3d25">
+            <TableID>dbo_Dim_AreaDelito</TableID>
+            <ColumnID>Nombre_Area</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="5d042e3a-b43e-4a23-a809-a75c043a052d">
+      <ID>Nombre Lugar</ID>
+      <Name>Lugar</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="a59b482a-f7e6-41b2-a708-7df6be6ac087">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="45c682c4-ea94-46cd-a320-f1db54999228">
+            <TableID>dbo_Dim_AreaDelito</TableID>
+            <ColumnID>Nombre_Area</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="c77d8d6a-b192-4e9d-8328-0010ad9c57d7">
+          <DataType>WChar</DataType>
+          <DataSize>100</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="afdd9c5d-8e54-4cde-a31b-5c61bfed6d4c">
+            <TableID>dbo_Dim_AreaDelito</TableID>
+            <ColumnID>Nombre_Lugar</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="5b853c51-740f-4843-93e2-b6ea2b8d03c1">
+        <DataType>WChar</DataType>
+        <DataSize>100</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="4dbf47b0-a46c-4f79-bd40-67d11704d3e9">
+          <TableID>dbo_Dim_AreaDelito</TableID>
+          <ColumnID>Nombre_Lugar</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="4f8b595c-e745-464d-b058-c4a361b1f895">
+          <AttributeID>Nombre Area</AttributeID>
+          <Name>Area</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="b63f1d63-0d7b-4f68-9fef-a35ddbb678f2">
+      <ID>Nombre Ubicacion</ID>
+      <Name>Ubicacion</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="e3d589ec-1e6f-4a0c-967c-5d6ad70104d6">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="1262b797-35d9-4591-adcc-6de0764eb829">
+            <TableID>dbo_Dim_AreaDelito</TableID>
+            <ColumnID>Nombre_Area</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="43fd40a5-8ed6-411a-9a5a-c7b482ee9570">
+          <DataType>WChar</DataType>
+          <DataSize>100</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="5eb7b71f-4a1a-4804-bd57-ce54373a914a">
+            <TableID>dbo_Dim_AreaDelito</TableID>
+            <ColumnID>Nombre_Lugar</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="337994bf-84c8-49ee-811b-e0e24c508357">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="fe7c8e16-36e2-4704-92cb-3c94d5f75861">
+            <TableID>dbo_Dim_AreaDelito</TableID>
+            <ColumnID>Nombre_Ubicacion</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="fd7317eb-c3c1-464c-af5c-7d2102cd442d">
+        <DataType>WChar</DataType>
+        <DataSize>50</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="0416969a-9f88-4f38-9b49-51db5cd3003e">
+          <TableID>dbo_Dim_AreaDelito</TableID>
+          <ColumnID>Nombre_Ubicacion</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="7e2efa72-e915-4d13-8eb4-16706e0e6488">
+          <AttributeID>Nombre Lugar</AttributeID>
+          <Name>Lugar</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <Hierarchies>
+    <Hierarchy dwd:design-time-name="77ac5427-80d2-4947-b636-480bfaba9497">
+      <ID>Jerarquía</ID>
+      <Name>AreaGeografica</Name>
+      <Levels>
+        <Level dwd:design-time-name="2d5f0793-12ef-4cfa-a498-3bde731f7201">
+          <ID>Area</ID>
+          <Name>Area</Name>
+          <SourceAttributeID>Nombre Area</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="e6bec347-1774-4e86-a527-8d2fbbf5350c">
+          <ID>Lugar</ID>
+          <Name>Lugar</Name>
+          <SourceAttributeID>Nombre Lugar</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="2fe664a4-4172-478a-8a1b-32b43a3c88cb">
+          <ID>Ubicacion</ID>
+          <Name>Ubicacion</Name>
+          <SourceAttributeID>Nombre Ubicacion</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+  </Hierarchies>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>

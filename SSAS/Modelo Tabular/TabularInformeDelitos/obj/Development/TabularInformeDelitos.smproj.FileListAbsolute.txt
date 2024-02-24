@@ -1,0 +1,8 @@
+C:\Users\daric\Desktop\Pj\ProyectoTabular-Informes\TabularInformeDelitos\TabularInformeDelitos\bin\Model.asdatabase
+C:\Users\daric\Desktop\Pj\ProyectoTabular-Informes\TabularInformeDelitos\TabularInformeDelitos\bin\Model.deploymenttargets
+C:\Users\daric\Desktop\Pj\ProyectoTabular-Informes\TabularInformeDelitos\TabularInformeDelitos\bin\Model.deploymentoptions
+C:\Users\daric\Desktop\Pj\ProyectoTabular-Informes\TabularInformeDelitos\TabularInformeDelitos\obj\Development\TabularInformeDelitos.smproj.AssemblyReference.cache
+C:\Users\daric\Desktop\Pj\ProyectoTabular-Informes\TabularInformeDelitos\TabularInformeDelitos\obj\Development\TabularInformeDelitos.smproj.CoreCompileInputs.cache
+C:\Users\daric\Desktop\Pj\ProyectoTabular-Informes\TabularInformeDelitos\TabularInformeDelitos\obj\Development\Model.asdatabase
+C:\Users\daric\Desktop\Pj\ProyectoTabular-Informes\TabularInformeDelitos\TabularInformeDelitos\obj\Development\Model.deploymentoptions
+C:\Users\daric\Desktop\Pj\ProyectoTabular-Informes\TabularInformeDelitos\TabularInformeDelitos\obj\Development\Model.deploymenttargets

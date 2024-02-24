@@ -1,0 +1,591 @@
+{
+  "name": "SemanticModel",
+  "compatibilityLevel": 1200,
+  "model": {
+    "culture": "es-PE",
+    "dataSources": [
+      {
+        "name": "SqlServer DESKTOP-QCHH65S PROJECT",
+        "connectionString": "Provider=SQLOLEDB;Data Source=DESKTOP-QCHH65S;Initial Catalog=PROJECT;Integrated Security=SSPI;Persist Security Info=false",
+        "impersonationMode": "impersonateServiceAccount",
+        "annotations": [
+          {
+            "name": "ConnectionEditUISource",
+            "value": "SqlServer"
+          }
+        ]
+      }
+    ],
+    "tables": [
+      {
+        "name": "Dim_AreaDelito",
+        "columns": [
+          {
+            "name": "ID_AreaDelito",
+            "dataType": "int64",
+            "sourceColumn": "ID_AreaDelito",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "Area",
+            "dataType": "string",
+            "sourceColumn": "Nombre_Area",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "Lugar",
+            "dataType": "string",
+            "sourceColumn": "Nombre_Lugar",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Ubicacion",
+            "dataType": "string",
+            "sourceColumn": "Nombre_Ubicacion",
+            "sourceProviderType": "Char"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Dim_AreaDelito",
+            "dataView": "full",
+            "source": {
+              "type": "query",
+              "query": " \t\t\t\tSELECT [dbo].[Dim_AreaDelito].*   FROM [dbo].[Dim_AreaDelito] ",
+              "dataSource": "SqlServer DESKTOP-QCHH65S PROJECT"
+            }
+          }
+        ],
+        "hierarchies": [
+          {
+            "name": "Area Geografica",
+            "levels": [
+              {
+                "name": "Area",
+                "ordinal": 0,
+                "column": "Area"
+              },
+              {
+                "name": "Lugar",
+                "ordinal": 1,
+                "column": "Lugar"
+              }
+            ]
+          }
+        ],
+        "annotations": [
+          {
+            "name": "_TM_ExtProp_QueryDefinition",
+            "value": " \t\t\t\tSELECT [dbo].[Dim_AreaDelito].*   FROM [dbo].[Dim_AreaDelito] "
+          },
+          {
+            "name": "_TM_ExtProp_DbTableName",
+            "value": "Dim_AreaDelito"
+          },
+          {
+            "name": "_TM_ExtProp_DbSchemaName",
+            "value": "dbo"
+          }
+        ]
+      },
+      {
+        "name": "Dim_Estado_de_Informe",
+        "columns": [
+          {
+            "name": "Cod_Estado_Informe",
+            "dataType": "string",
+            "sourceColumn": "Cod_Estado_Informe",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Descripcion_EstadoInforme",
+            "dataType": "string",
+            "sourceColumn": "Descripcion_EstadoInforme",
+            "sourceProviderType": "Char"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Dim_Estado_de_Informe",
+            "dataView": "full",
+            "source": {
+              "type": "query",
+              "query": " \t\t\t\tSELECT [dbo].[Dim_Estado_de_Informe].*   FROM [dbo].[Dim_Estado_de_Informe] ",
+              "dataSource": "SqlServer DESKTOP-QCHH65S PROJECT"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "_TM_ExtProp_QueryDefinition",
+            "value": " \t\t\t\tSELECT [dbo].[Dim_Estado_de_Informe].*   FROM [dbo].[Dim_Estado_de_Informe] "
+          },
+          {
+            "name": "_TM_ExtProp_DbTableName",
+            "value": "Dim_Estado_de_Informe"
+          },
+          {
+            "name": "_TM_ExtProp_DbSchemaName",
+            "value": "dbo"
+          }
+        ]
+      },
+      {
+        "name": "Dim_Tiempo",
+        "columns": [
+          {
+            "name": "Fecha_OcurrenciaPK",
+            "dataType": "dateTime",
+            "sourceColumn": "Fecha_OcurrenciaPK",
+            "formatString": "General Date",
+            "sourceProviderType": "DBTimeStamp"
+          },
+          {
+            "name": "Año",
+            "dataType": "int64",
+            "sourceColumn": "Año",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "Semestre",
+            "dataType": "int64",
+            "sourceColumn": "Semestre",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "Trimestre",
+            "dataType": "int64",
+            "sourceColumn": "Trimestre",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "Numero_Mes",
+            "dataType": "int64",
+            "sourceColumn": "Numero_Mes",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "Dia",
+            "dataType": "int64",
+            "sourceColumn": "Dia",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "Descripcion_Semestre",
+            "dataType": "string",
+            "sourceColumn": "Descripcion_Semestre",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Descripcion_Trimestre",
+            "dataType": "string",
+            "sourceColumn": "Descripcion_Trimestre",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Descripcion_Mes",
+            "dataType": "string",
+            "sourceColumn": "Descripcion_Mes",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "Descripcion_Dia",
+            "dataType": "string",
+            "sourceColumn": "Descripcion_Dia",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "NumeroDia",
+            "dataType": "int64",
+            "sourceColumn": "NumeroDia",
+            "sourceProviderType": "Integer"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Dim_Tiempo",
+            "dataView": "full",
+            "source": {
+              "type": "query",
+              "query": " \t\t\t\tSELECT [dbo].[Dim_Tiempo].*   FROM [dbo].[Dim_Tiempo] ",
+              "dataSource": "SqlServer DESKTOP-QCHH65S PROJECT"
+            }
+          }
+        ],
+        "hierarchies": [
+          {
+            "name": "Calendario",
+            "levels": [
+              {
+                "name": "Año",
+                "ordinal": 0,
+                "column": "Año"
+              },
+              {
+                "name": "Semestre",
+                "ordinal": 1,
+                "column": "Descripcion_Semestre"
+              },
+              {
+                "name": "Trimestre",
+                "ordinal": 2,
+                "column": "Descripcion_Trimestre"
+              },
+              {
+                "name": "Mes",
+                "ordinal": 3,
+                "column": "Descripcion_Mes"
+              },
+              {
+                "name": "Dia",
+                "ordinal": 4,
+                "column": "Descripcion_Dia"
+              }
+            ]
+          }
+        ],
+        "annotations": [
+          {
+            "name": "_TM_ExtProp_QueryDefinition",
+            "value": " \t\t\t\tSELECT [dbo].[Dim_Tiempo].*   FROM [dbo].[Dim_Tiempo] "
+          },
+          {
+            "name": "_TM_ExtProp_DbTableName",
+            "value": "Dim_Tiempo"
+          },
+          {
+            "name": "_TM_ExtProp_DbSchemaName",
+            "value": "dbo"
+          }
+        ]
+      },
+      {
+        "name": "Dim_Tipo_Arma",
+        "columns": [
+          {
+            "name": "Codigo_Arma",
+            "dataType": "int64",
+            "sourceColumn": "Codigo_Arma",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "Descripcion_Arma",
+            "dataType": "string",
+            "sourceColumn": "Descripcion_Arma",
+            "sourceProviderType": "Char"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Dim_Tipo_Arma",
+            "dataView": "full",
+            "source": {
+              "type": "query",
+              "query": " \t\t\t\tSELECT [dbo].[Dim_Tipo_Arma].*   FROM [dbo].[Dim_Tipo_Arma] ",
+              "dataSource": "SqlServer DESKTOP-QCHH65S PROJECT"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "_TM_ExtProp_QueryDefinition",
+            "value": " \t\t\t\tSELECT [dbo].[Dim_Tipo_Arma].*   FROM [dbo].[Dim_Tipo_Arma] "
+          },
+          {
+            "name": "_TM_ExtProp_DbTableName",
+            "value": "Dim_Tipo_Arma"
+          },
+          {
+            "name": "_TM_ExtProp_DbSchemaName",
+            "value": "dbo"
+          }
+        ]
+      },
+      {
+        "name": "Dim_Tipo_Delito",
+        "columns": [
+          {
+            "name": "Codigo_Delito",
+            "dataType": "int64",
+            "sourceColumn": "Codigo_Delito",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "Descripcion_Delito",
+            "dataType": "string",
+            "sourceColumn": "Descripcion_Delito",
+            "sourceProviderType": "WChar"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Dim_Tipo_Delito",
+            "dataView": "full",
+            "source": {
+              "type": "query",
+              "query": " \t\t\t\tSELECT [dbo].[Dim_Tipo_Delito].*   FROM [dbo].[Dim_Tipo_Delito] ",
+              "dataSource": "SqlServer DESKTOP-QCHH65S PROJECT"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "_TM_ExtProp_QueryDefinition",
+            "value": " \t\t\t\tSELECT [dbo].[Dim_Tipo_Delito].*   FROM [dbo].[Dim_Tipo_Delito] "
+          },
+          {
+            "name": "_TM_ExtProp_DbTableName",
+            "value": "Dim_Tipo_Delito"
+          },
+          {
+            "name": "_TM_ExtProp_DbSchemaName",
+            "value": "dbo"
+          }
+        ]
+      },
+      {
+        "name": "Dim_Victima",
+        "columns": [
+          {
+            "name": "ID_Victima",
+            "dataType": "int64",
+            "sourceColumn": "ID_Victima",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "Genero",
+            "dataType": "string",
+            "sourceColumn": "Descripcion_Genero",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Origen Etnico",
+            "dataType": "string",
+            "sourceColumn": "Descripcion_OrigenEtnico",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Edad",
+            "dataType": "int64",
+            "sourceColumn": "Edad_Victima",
+            "sourceProviderType": "Integer"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Dim_Victima",
+            "dataView": "full",
+            "source": {
+              "type": "query",
+              "query": " \t\t\t\tSELECT [dbo].[Dim_Victima].*   FROM [dbo].[Dim_Victima] ",
+              "dataSource": "SqlServer DESKTOP-QCHH65S PROJECT"
+            }
+          }
+        ],
+        "hierarchies": [
+          {
+            "name": "Informacion Victima",
+            "levels": [
+              {
+                "name": "Genero",
+                "ordinal": 0,
+                "column": "Genero"
+              },
+              {
+                "name": "Origen Etnico",
+                "ordinal": 1,
+                "column": "Origen Etnico"
+              },
+              {
+                "name": "Edad",
+                "ordinal": 2,
+                "column": "Edad"
+              }
+            ]
+          }
+        ],
+        "annotations": [
+          {
+            "name": "_TM_ExtProp_QueryDefinition",
+            "value": " \t\t\t\tSELECT [dbo].[Dim_Victima].*   FROM [dbo].[Dim_Victima] "
+          },
+          {
+            "name": "_TM_ExtProp_DbTableName",
+            "value": "Dim_Victima"
+          },
+          {
+            "name": "_TM_ExtProp_DbSchemaName",
+            "value": "dbo"
+          }
+        ]
+      },
+      {
+        "name": "Fact_Informes",
+        "columns": [
+          {
+            "name": "ID_Informe",
+            "dataType": "int64",
+            "sourceColumn": "ID_Informe",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "ID_Informe_Division",
+            "dataType": "int64",
+            "sourceColumn": "ID_Informe_Division",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "ID_FechaOcurrencia",
+            "dataType": "dateTime",
+            "sourceColumn": "ID_FechaOcurrencia",
+            "formatString": "General Date",
+            "sourceProviderType": "DBTimeStamp"
+          },
+          {
+            "name": "ID_AreaDelito",
+            "dataType": "int64",
+            "sourceColumn": "ID_AreaDelito",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "ID_Delito",
+            "dataType": "int64",
+            "sourceColumn": "ID_Delito",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "ID_Arma",
+            "dataType": "int64",
+            "sourceColumn": "ID_Arma",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "ID_Victima",
+            "dataType": "int64",
+            "sourceColumn": "ID_Victima",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "ID_Estado_Informe",
+            "dataType": "string",
+            "sourceColumn": "ID_Estado_Informe",
+            "sourceProviderType": "Char"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Fact_Informes",
+            "dataView": "full",
+            "source": {
+              "type": "query",
+              "query": " \t\t\t\tSELECT [dbo].[Fact_Informes].*   FROM [dbo].[Fact_Informes] ",
+              "dataSource": "SqlServer DESKTOP-QCHH65S PROJECT"
+            }
+          }
+        ],
+        "measures": [
+          {
+            "name": "Total Numero Delitos",
+            "expression": "DISTINCTCOUNT(Fact_Informes[ID_Informe_Division])"
+          },
+          {
+            "name": "Total Delitos 2021",
+            "expression": [
+              " CALCULATE([Total Numero Delitos],Dim_Tiempo[Año] = 2021)",
+              ""
+            ]
+          },
+          {
+            "name": "Total Delitos 2020",
+            "expression": " CALCULATE([Total Numero Delitos],Dim_Tiempo[Año] = 2020)"
+          },
+          {
+            "name": "Total Delitos 2022",
+            "expression": " CALCULATE([Total Numero Delitos],Dim_Tiempo[Año] = 2022)"
+          },
+          {
+            "name": "TotalDelitosAñosSelecionado",
+            "expression": " CALCULATE([Total Numero Delitos],Dim_Tiempo[Año] = SELECTEDVALUE(Dim_Tiempo[Año]))"
+          },
+          {
+            "name": "Porcentaje por Año",
+            "expression": " DIVIDE ([TotalDelitosAñosSelecionado],[Total Numero Delitos])"
+          },
+          {
+            "name": "Total Numero Delitos (Año Previo)",
+            "expression": "CALCULATE([Total Numero Delitos],PREVIOUSYEAR(Dim_Tiempo[Fecha_OcurrenciaPK]))"
+          },
+          {
+            "name": "Total Delitos 2023",
+            "expression": " CALCULATE([Total Numero Delitos],Dim_Tiempo[Año] = 2023)"
+          }
+        ],
+        "annotations": [
+          {
+            "name": "_TM_ExtProp_QueryDefinition",
+            "value": " \t\t\t\tSELECT [dbo].[Fact_Informes].*   FROM [dbo].[Fact_Informes] "
+          },
+          {
+            "name": "_TM_ExtProp_DbTableName",
+            "value": "Fact_Informes"
+          },
+          {
+            "name": "_TM_ExtProp_DbSchemaName",
+            "value": "dbo"
+          }
+        ]
+      }
+    ],
+    "relationships": [
+      {
+        "name": "7b5e3f34-b990-47f6-9454-04936680af15",
+        "fromTable": "Fact_Informes",
+        "fromColumn": "ID_FechaOcurrencia",
+        "toTable": "Dim_Tiempo",
+        "toColumn": "Fecha_OcurrenciaPK"
+      },
+      {
+        "name": "5c4c2f85-b26b-4f51-a0ed-f767b5608e2d",
+        "fromTable": "Fact_Informes",
+        "fromColumn": "ID_AreaDelito",
+        "toTable": "Dim_AreaDelito",
+        "toColumn": "ID_AreaDelito"
+      },
+      {
+        "name": "6b917a6f-bb07-48e3-b0ab-8f0a5ed7ce97",
+        "fromTable": "Fact_Informes",
+        "fromColumn": "ID_Estado_Informe",
+        "toTable": "Dim_Estado_de_Informe",
+        "toColumn": "Cod_Estado_Informe"
+      },
+      {
+        "name": "c712e6f6-afee-4d6c-a29b-382c2d9dba14",
+        "fromTable": "Fact_Informes",
+        "fromColumn": "ID_Arma",
+        "toTable": "Dim_Tipo_Arma",
+        "toColumn": "Codigo_Arma"
+      },
+      {
+        "name": "366ed238-310e-4873-8e43-defb167a15e9",
+        "fromTable": "Fact_Informes",
+        "fromColumn": "ID_Delito",
+        "toTable": "Dim_Tipo_Delito",
+        "toColumn": "Codigo_Delito"
+      },
+      {
+        "name": "eac0f477-42b6-4e40-a6c0-d3219778ccdb",
+        "fromTable": "Fact_Informes",
+        "fromColumn": "ID_Victima",
+        "toTable": "Dim_Victima",
+        "toColumn": "ID_Victima"
+      }
+    ],
+    "annotations": [
+      {
+        "name": "ClientCompatibilityLevel",
+        "value": "400"
+      }
+    ]
+  },
+  "id": "SemanticModel"
+}

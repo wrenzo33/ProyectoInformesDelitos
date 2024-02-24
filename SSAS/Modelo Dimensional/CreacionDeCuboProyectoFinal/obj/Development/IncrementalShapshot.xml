@@ -1,0 +1,96 @@
+﻿<DeploymentSnapshot xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Target>
+    <Database>CreacionDeCuboProyectoFinal</Database>
+    <Server>DESKTOP-QCHH65S</Server>
+    <ConnectionString>Data Source=DESKTOP-QCHH65S;Timeout=0</ConnectionString>
+  </Target>
+  <Options>
+    <TransactionalDeployment>false</TransactionalDeployment>
+    <PartitionDeployment>DeployPartitions</PartitionDeployment>
+    <RoleDeployment>DeployRolesRetainMembers</RoleDeployment>
+    <ProcessingOption>DoNotProcess</ProcessingOption>
+    <OutputScript></OutputScript>
+    <ImpactAnalysisFile></ImpactAnalysisFile>
+    <ConfigurationSettingsDeployment>Deploy</ConfigurationSettingsDeployment>
+    <OptimizationSettingsDeployment>Deploy</OptimizationSettingsDeployment>
+    <WriteBackTableCreation>UseExisting</WriteBackTableCreation>
+  </Options>
+  <Snapshot>
+    <ObjectSnapshots>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.RelationalDataSource</Type>
+        <TimeStamp>Yr3NwGvHjsb+iLJE7bxVY+y3CPA=24/01/2024 15:37:3524/01/2024 15:37:35</TimeStamp>
+        <ID>
+          <String>PROJECT</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.DataSourceView</Type>
+        <TimeStamp>jF4xl6Xl94Q1D0DHHVHLkDIR3Ds=24/01/2024 17:09:1124/01/2024 15:38:09</TimeStamp>
+        <ID>
+          <String>PROJECT_View</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>PB2QKlXCxTgrnEEDvq9vCUgnz2k=24/01/2024 17:52:5624/01/2024 15:49:33</TimeStamp>
+        <ID>
+          <String>Dim Tiempo</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>7GqZ6/hpx/Kopi/uSz/OFl4WQ2A=24/01/2024 17:12:2424/01/2024 17:09:11</TimeStamp>
+        <ID>
+          <String>Dim Area Delito 1 1</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>rD/cu0UthKF7/O7Ef5wswAqG69U=24/01/2024 17:16:3124/01/2024 17:12:47</TimeStamp>
+        <ID>
+          <String>Dim Victima</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>mkF9c9WDpIkV3Z4FRe/F7C8KPcU=24/01/2024 17:22:4424/01/2024 17:21:12</TimeStamp>
+        <ID>
+          <String>Dim Estado De Informe</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>YOY44UhA4lt+5bjr8Zt0/LWbX+o=24/01/2024 17:22:4424/01/2024 17:21:43</TimeStamp>
+        <ID>
+          <String>Dim Tipo Delito</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>SmBGIb9+S9Lzwbr3DbSGyj8RmxY=24/01/2024 17:27:0924/01/2024 17:22:44</TimeStamp>
+        <ID>
+          <String>Dim Tipo Arma</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>TS22U+7RZqtG+tXjwtgCNCTFGY4=27/01/2024 15:38:5424/01/2024 17:27:08HL3m1cthoNiglbaT+I3qYjUW8pA=24/01/2024 17:27:0924/01/2024 17:27:08</TimeStamp>
+        <ID>
+          <String>Cubo_PROJECT_View</String>
+        </ID>
+      </ObjectSnapshot>
+    </ObjectSnapshots>
+    <DatabaseSnapshot>
+      <Type>Microsoft.AnalysisServices.Database</Type>
+      <TimeStamp>MQFkez94hng2zKGr9ewHlSAuUZI=24/01/2024 15:37:0124/01/2024 15:37:01</TimeStamp>
+      <ID>
+        <String>CreacionDeCuboProyectoFinal</String>
+      </ID>
+    </DatabaseSnapshot>
+    <Granularity>Coarse</Granularity>
+  </Snapshot>
+  <AssemblyLocations />
+  <ProcessingComplete>true</ProcessingComplete>
+  <LastDeployed>2024-01-27T20:39:06Z</LastDeployed>
+</DeploymentSnapshot>

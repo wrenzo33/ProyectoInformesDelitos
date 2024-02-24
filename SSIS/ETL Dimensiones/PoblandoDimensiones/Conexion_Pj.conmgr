@@ -1,0 +1,12 @@
+﻿<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="Conexion_Pj"
+  DTS:DTSID="{2B08FEB9-7DA4-4765-A737-5F44F57967A6}"
+  DTS:CreationName="OLEDB">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectRetryCount="1"
+      DTS:ConnectRetryInterval="5"
+      DTS:ConnectionString="Data Source=DESKTOP-QCHH65S;Initial Catalog=Pj;Provider=SQLOLEDB.1;Integrated Security=SSPI;Application Name=SSIS-PoblandoDimensiones-{2B08FEB9-7DA4-4765-A737-5F44F57967A6}DESKTOP-QCHH65S.Pj1;Auto Translate=False;" />
+  </DTS:ObjectData>
+</DTS:ConnectionManager>
